@@ -13,8 +13,15 @@ body {
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
-section {
-  padding: 20px 240px;
+@media (min-width: 500px) {
+  section {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    padding: 20px 240px;
+  }
 }
 section.red {
   background-color: #e23b00;
@@ -25,10 +32,16 @@ section.blue {
   color: white;
 }
 h1 {
+  font-size: 50px;
+}
+h2 {
   font-size: 40px;
 }
 p {
   font-size: 24px;
+}
+.event_list {
+  margin: 40px 0;
 }
 .event {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -51,6 +64,8 @@ p {
 .event .content_wrapper {
   width: 80%;
   margin: auto;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .connect_line {
   border-left: thick solid white;
@@ -58,63 +73,73 @@ p {
   position: relative;
   left: 50%;
 }
+img.resize {
+  border-radius: 200px;
+  height: 360px;
+  width: 360px;
+}
 </style>
 <body>
   <section class="red">
-    <h1>NOW is the time to push for a DREAM act.</h1>
+    <h1>NOW is the time to push for a clean DREAM Act.</h1>
   </section>
   <section>
-    <p>JCUA, the Jewish Council on Urban Affairs, is fighting as allies with groups like the Illinois Coalition for Immigrant and Refugee Rights for a clean DREAM Act.</p>
-    <p>As Jews in America—an immigrant people in a nation of immigrants—we stand with allies in favor of a DREAM Act.</p>
+    <p>The possibility of a DREAM Act is on the table.</p>
+    <p>Groups like ICIRR, the Illinois Coalition for Immigrant and Refugee Rights, are leading the fight to protect America's DREAMers.</p>
+    <p>JCUA, the Jewish Council on Urban Affairs, is proud to stand alongside as an ally.</p>
+    <img src="img/pass-the-dream-act.jpg" class="resize" />
+    <h2>Please join us at one of these events to fight for immigrants:</h2>
   </section>
   <section class="blue">
-    <div class="event">
-      <div class="date_wrapper">
-        <p class="date">Anytime</p>
+    <div class="event_list">
+      <div class="event">
+        <div class="date_wrapper">
+          <p class="date">Anytime</p>
+        </div>
+        <div class="content_wrapper">
+          <p>Join our Rapid Response Team</p>
+        </div>
       </div>
-      <div class="content_wrapper">
-        <p>Join our Rapid Response Team</p>
+      <div class="connect_line">
       </div>
-    </div>
-    <div class="connect_line">
-    </div>
-    <div class="event">
-      <div class="date_wrapper">
-        <p class="date">January 24, 2018</p>
+      <div class="event">
+        <div class="date_wrapper">
+          <p class="date">January 24, 2018</p>
+        </div>
+        <div class="content_wrapper">
+          <p>Call members for turnout on Protected By Faith Rally</p>
+        </div>
       </div>
-      <div class="content_wrapper">
-        <p>Call members for turnout on Protected By Faith Rally</p>
+      <div class="connect_line">
       </div>
-    </div>
-    <div class="connect_line">
-    </div>
-    <div class="event">
-      <div class="date_wrapper">
-        <p class="date">February 5, 2018</p>
+      <div class="event">
+        <div class="date_wrapper">
+          <p class="date">February 5, 2018</p>
+        </div>
+        <div class="content_wrapper">
+          <p>Protected By Faith Rally</p>
+        </div>
       </div>
-      <div class="content_wrapper">
-        <p>Protected By Faith Rally</p>
+      <div class="connect_line">
       </div>
-    </div>
-    <div class="connect_line">
-    </div>
 
-    <div class="event">
-      <div class="date_wrapper">
-        <p class="date">February 6, 2018</p>
+      <div class="event">
+        <div class="date_wrapper">
+          <p class="date">February 6, 2018</p>
+        </div>
+        <div class="content_wrapper">
+          <p>Call members to turnout for ICIRR Summit</p>
+        </div>
       </div>
-      <div class="content_wrapper">
-        <p>Call members to turnout for ICIRR Summit</p>
+      <div class="connect_line">
       </div>
-    </div>
-    <div class="connect_line">
-    </div>
-    <div class="event">
-      <div class="date_wrapper">
-        <p class="date">February 17, 2018</p>
-      </div>
-      <div class="content_wrapper">
-        <p>ICIRR Summit</p>
+      <div class="event">
+        <div class="date_wrapper">
+          <p class="date">February 17, 2018</p>
+        </div>
+        <div class="content_wrapper">
+          <p>ICIRR Summit</p>
+        </div>
       </div>
     </div>
   </section>
