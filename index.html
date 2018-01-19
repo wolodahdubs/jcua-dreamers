@@ -15,12 +15,12 @@ body {
 }
 @media (min-width: 500px) {
   section {
-    padding: 20px 0;
+    padding: 20px 240px;
   }
 }
 @media (max-width: 500px) {
   section {
-    padding: 20px 240px;
+    padding: 20px 10px;
   }
 }
 section.red {
@@ -43,9 +43,14 @@ p {
 .event_list {
   margin: 40px 0;
 }
+
+@media (min-width: 500px) {
+  .event {
+    width: 500px;
+  }
+}
 .event {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
-  width: 500px;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
